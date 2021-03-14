@@ -1,0 +1,2 @@
+{winning_user} landed a teamfight winning ultimate.
+{losing_user} misclicked. Baron stolen.

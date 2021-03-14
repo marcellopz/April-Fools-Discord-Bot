@@ -1,0 +1,11 @@
+{winning_user} got first blood on {losing_user} before minions even spawn!
+{winning_user} cheesed {losing_user} and got first blood!
+{losing_user} was alt tabbed and {winning_user} did not forgive, first blood!
+{winning_team} invaded and got {losing_user} for first blood!
+{winning_team} took first blood from a level one invade.
+{losing_team} gave first blood from a level one invade. The salt can be felt through the screen. 
+{losing_user} was tabbed out during an invade and gave first blood. At least your music is on now.
+{winning_user} won a level 2 all-in against {losing_user} and took first blood.
+{losing_user} lost a level 2 all-in against {winning_user} and gave first blood. That’s embarrassing. 
+{winning_user} outplayed {losing_user} and got first blood. They’ll think twice next time lol. 
+{losing_user} miscalculated a play and gave first blood.

@@ -1,0 +1,2 @@
+{teamone} got a dragon but {teamtwo} responded with Rift Herald.
+{teamone} got a kill bot with a teleport play but {teamtwo} took top turret. 

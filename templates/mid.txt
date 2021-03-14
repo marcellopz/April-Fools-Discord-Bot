@@ -1,0 +1,12 @@
+{losing_team} took too long to rotate and {winning_team} got dragon for free. We hope those extra creeps were worth it. 
+{losing_team} got flanked and lost the teamfight.
+{winning_user} took an enemy tower.
+{winning_user} stole a drake.
+{winning_user} killed a drake.
+{losing_user} died while taking drake.
+{losing_user} missed their abilities and got drake stolen by {winning_user}.
+{winning_user} got a double kill at Rift Herald. Herald taken.
+{losing_user} died while taking Rift Herald.
+{winning_user} saw a gank coming from a mile away. The jungler just wasted a minute waiting for the engage.
+{winning_user} made a poggers teleport play and got a double kill. Top lane does have an impact after all.
+{winning_user} tilted the enemy by emote spamming, leading them to take a bad fight. BMing does pay off after all.
