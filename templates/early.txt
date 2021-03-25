@@ -1,7 +1,8 @@
 {winning_team} 4-man dove bot lane and got a double kill.
 {winning_team} won a 2v2 mid lane.
 {losing_team} lost early vision control. Good time to overextend your lane.
-{losing_user} died to a jungle camp. TF bro?
+{losing_user} forgot to buy starting items and is at a hard disadvantage in his lane against {winning_user}
+{losing_user} failed to kite a jungle camp and was executed. 
 {winning_user} won a 1v1 against {losing_user} at Scuttle.
 {winning_user} stole the first drake.
 {losing_user} died from a 4-man gank and lost their turret. You don’t think four people was a bit excessive?
@@ -10,12 +11,12 @@
 {losing_user} was solo killed by {winning_user}.
 {winning_user} solo killed {losing_user}.
 {losing_user} died to a gank.
+{winning_user} became Wide-Bwipo and crushed his lane opponent {losing_user} in several fights.
 {winning_user} got a kill from a gank. 
-{losing_user} missed a cannon and giga tilted.
-{losing_user} fatfingered their flash into the enemy and was solo killed.
+{losing_user} missed a cannon and is giga tilted. Come on, there is more than one of those in a game.
+{losing_user} fat fingered their flash into the enemy and was solo killed.
 {losing_user} got ganked and tilt-teleported right back in to get ganked again. The salt is flowing.
-{losing_user} failed to skill their ultimate at lvl 6 and was solokilled. But hey, those 4 points in Q are sweet.
-{losing_user} had a huge ping spike and walked into the enemy tower. Better check your internet before playing.
-{winning_user} farmed double {losing_user}’s CS score...and got a bounty for some stupid reason. 
-{losing_user} watched the latest NightBlue video and picked a "broken" jungler. We know how this game will end.
-{winning_user} calculated his own damage perfectly. He won his lane by a landslide.
+{losing_user} failed to skill their ultimate at lvl 6 and was solo killed. But hey, those 4 points in Q are sweet.
+{winning_user} farmed double {losing_user}'s CS score...and got a bounty for some reason. 
+{losing_user} watched the latest NightBlue video and picked a "broken" jungler. We all know how this game will end.
+{losing_user} accidentally locked the wrong champion and is playing offmeta.

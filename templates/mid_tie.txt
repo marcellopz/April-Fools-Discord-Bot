@@ -1,2 +1,3 @@
 {teamone} got a dragon but {teamtwo} responded with Rift Herald.
-{teamone} got a kill bot with a teleport play but {teamtwo} took top turret. 
+{teamone} was trying to out-rotate {teamtwo}, but it didn't work due to poor pathing, come out even.
+{teamone} got a kill bot with a teleport play but {teamtwo} took top turret.

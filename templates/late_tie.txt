@@ -1,1 +1,3 @@
-{teamone} got Baron but {teamtwo} engaged and took four kills. Gold is even.
+{teamone} got baron but {teamtwo} engaged and took four kills. Gold is even.
+{teamone} managed to get the elder drake but it got handshaked with {teamtwo}’s baron.
+{teamone} tried to splitpush while {teamtwo} was attempting to force a teamfight, but it ended in a stalemate.
