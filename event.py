@@ -8,7 +8,7 @@ import json
 
 global rates
 
-async def event(team1, team2, ctx):
+async def event(team1, team2, channel):
     global rates
     rates = {
         team1.name.lower(): 2,
@@ -20,12 +20,12 @@ async def event(team1, team2, ctx):
     team1_score = [0] # array of scores
     team2_score = [0]
     lead = [] # array of who was in the lead
-    time_interval = 0.1 # minutes
-    embed0 = discord.Embed(color=0xff4a4a)
+    time_interval = 1 # minutes
+    embed0 = discord.Embed(color=0x0394fc)
     embed0.add_field(name="Match starting!", value=f'Match between {team1.mention} and {team2.mention} is starting in {time_interval} minutes! \nUpdates also every {time_interval} minutes.\n\nGet your bets ready!', inline=False)
     embed0.add_field(name=f"{team1.name} rates:", value=2.0, inline=True)
     embed0.add_field(name=f"{team2.name} rates:", value=2.0, inline=True)
-    await ctx.send(embed=embed0)
+    await channel.send(embed=embed0)
     
     for i in range(rounds): # game
         await asyncio.sleep(60 * time_interval)
@@ -42,9 +42,9 @@ async def event(team1, team2, ctx):
             msg = get_state_message(winner, loser, lead, team1.name, team2.name, msg)
         lead.append(winner)
         
-        embed1=discord.Embed(color=0x9ca2e2)
+        embed1=discord.Embed(color=0xba60eb)
         embed1.add_field(name="Match update", value=msg, inline=False)
-        await ctx.send(embed=embed1)
+        await channel.send(embed=embed1)
 
         [team1_rates, team2_rates] = calculate_rates(dice, rounds - i - 1, team1_score[-1], team2_score[-1])
         rates = {
@@ -53,14 +53,14 @@ async def event(team1, team2, ctx):
         }
         print(rates)
 
-        embed2=discord.Embed(color=0x99f788)
+        embed2=discord.Embed(color=0xfaf441)
         if team1_rates and team2_rates:
             embed2.add_field(name=f"{team1.name} rates:", value=team1_rates, inline=True)
             embed2.add_field(name=f"{team2.name} rates:", value=team2_rates, inline=True)
         else:
             embed2.add_field(name="Bets are closed!",value="‎ ‎  ‎ ‎ ‎ ‎")
         print(team1_score, team2_score)
-        await ctx.send(embed=embed2)
+        await channel.send(embed=embed2)
 
     # game end
     if winner == team1.name:
@@ -214,3 +214,15 @@ def stimulusCheck():
             member['coins'] = 100
             with open('members/' + filename, 'w') as write_file:
                 json.dump(member, write_file, indent=4)
+
+def getAliases(role_name):
+    role_split = role_name.split('(')
+    slice_object = slice(0,-1)
+    team_name = role_split[0][slice_object]
+    team_acronym = role_split[1][slice_object]
+    resp = {
+        role_name: role_name,
+        team_name: role_name,
+        team_acronym: role_name
+    }
+    return resp

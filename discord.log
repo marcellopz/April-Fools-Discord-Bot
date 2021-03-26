@@ -1,7 +1,4 @@
-2021-03-24 23:16:21,837:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
-2021-03-24 23:16:21,839:INFO:discord.client: logging in using static token
-2021-03-24 23:16:22,487:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
-2021-03-24 23:16:22,676:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-1075",{"micros":46384,"calls":["discord-sessions-prd-2-42",{"micros":44875,"calls":["start_session",{"micros":24598,"calls":["api-prd-main-vq4h",{"micros":21911,"calls":["get_user",{"micros":2566},"add_authorized_ip",{"micros":1718},"get_guilds",{"micros":3486},"coros_wait",{"micros":0}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":9359,"calls":[]}]}]}] (Session ID: 9a4c2b4fb3f9bc6c61ceff02bb378870).
-2021-03-25 01:12:27,569:INFO:discord.client: Got a request to RESUME the websocket.
-2021-03-25 01:12:28,052:INFO:discord.gateway: Shard ID None has sent the RESUME payload.
-2021-03-25 01:12:28,195:INFO:discord.gateway: Shard ID None has successfully RESUMED session 9a4c2b4fb3f9bc6c61ceff02bb378870 under trace ["gateway-prd-main-h9xh",{"micros":881,"calls":["discord-sessions-prd-2-42",{"micros":16}]}].
+2021-03-26 00:04:21,805:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2021-03-26 00:04:21,807:INFO:discord.client: logging in using static token
+2021-03-26 00:04:22,440:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2021-03-26 00:04:22,666:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-9f82",{"micros":85046,"calls":["discord-sessions-prd-2-122",{"micros":78207,"calls":["start_session",{"micros":51545,"calls":["api-prd-main-sw12",{"micros":49014,"calls":["get_user",{"micros":2197},"add_authorized_ip",{"micros":1580},"get_guilds",{"micros":14295},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":7,"calls":[]},"presence_connect",{"micros":13345,"calls":[]}]}]}] (Session ID: 540a915b3d89ff0baf86ec5a8f632cac).
