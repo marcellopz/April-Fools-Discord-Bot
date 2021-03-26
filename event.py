@@ -8,7 +8,7 @@ import json
 
 global rates
 
-async def event(team1, team2, channel):
+async def Event(team1, team2, channel):
     global rates
     rates = {
         team1.name.lower(): 2,
@@ -20,12 +20,17 @@ async def event(team1, team2, channel):
     team1_score = [0] # array of scores
     team2_score = [0]
     lead = [] # array of who was in the lead
-    time_interval = 1 # minutes
+    time_interval = 0.1 # minutes
     embed0 = discord.Embed(color=0x0394fc)
-    embed0.add_field(name="Match starting!", value=f'Match between {team1.mention} and {team2.mention} is starting in {time_interval} minutes! \nUpdates also every {time_interval} minutes.\n\nGet your bets ready!', inline=False)
+    embed0.add_field(name="Match starting!", value=f'Match between {team1.mention} and {team2.mention} is starting in **{time_interval}** minutes! Updates also every **{time_interval}** minutes.', inline=False)
+    embed0.add_field(name=f"{team1.name}:", value= getMembers(team1), inline=True)
+    embed0.add_field(name=f"{team2.name}:", value= getMembers(team2), inline=True)
+    await channel.send(embed=embed0)
+    embed0 = discord.Embed(color=0xfaf441)
     embed0.add_field(name=f"{team1.name} rates:", value=2.0, inline=True)
     embed0.add_field(name=f"{team2.name} rates:", value=2.0, inline=True)
     await channel.send(embed=embed0)
+    
     
     for i in range(rounds): # game
         await asyncio.sleep(60 * time_interval)
@@ -182,7 +187,7 @@ def calculate_rates(dice, numberRemaining, team1_score, team2_score):
     times = 0
     team1_won = 0
     team2_won = 0
-    while times<20000:
+    while times<1000:
         team1 = [team1_score]
         team2 = [team2_score]
         for i in range(numberRemaining):
@@ -226,3 +231,10 @@ def getAliases(role_name):
         team_acronym: role_name
     }
     return resp
+
+def getMembers(role):
+    member_list = '```'
+    for member in role.members:
+        member_list += '- '+ member.name + '\n'
+    member_list += '```'
+    return member_list

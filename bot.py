@@ -207,11 +207,10 @@ async def match(ctx, role1: discord.Role, role2: discord.Role):
         role2.name.lower(): role2.name
     }
     aliases = dict(event.getAliases(role1.name.lower()), **event.getAliases(role2.name.lower()))
-    print(currently_playing)
-    print(aliases)
-    print(capitalize)
-    winner = await event.event(role1, role2, channel)
-    await channel.send(f'{winner.mention} wins!')
+    winner = await event.Event(role1, role2, channel)
+    embed = discord.Embed(color=0x00fff7)
+    embed.add_field(name=f"🎉🎉 **{winner.name}** wins! 🎉🎉", value=f'🏆🏆{winner.mention}🏆🏆')
+    await channel.send(embed = embed)
     if bets:
         for bet in bets:
             if bet['team'] == winner.name.lower():
@@ -239,6 +238,21 @@ async def reset_coins(ctx):
             json.dump(member, write_file, indent=4)
     await ctx.message.add_reaction('✅')
     
+
+@client.command()
+async def list_teams(ctx, *, args):
+    if ctx.author.id not in mod_team:
+        return
+    roles = ctx.message.role_mentions
+    embed = discord.Embed(color=0xffc400)
+    for role in roles:
+        member_list = '```'
+        for member in role.members:
+            member_list += '- '+ member.name + '\n'
+        member_list += '```'
+        embed.add_field(name=role.name, value=member_list, inline=True)
+    await ctx.send(embed=embed)
+
 
 
 client.run(BOT_KEY)
