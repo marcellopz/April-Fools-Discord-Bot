@@ -42,12 +42,12 @@ async def Event(team1, team2, channel, time_interval):
                 team1_score[i] += 1
         team1_score.append(team1_score[i] + random.randint(1, dice))
         team2_score.append(team2_score[i] + random.randint(1, dice))
-        [winner, loser, msg] = message(team1, team2, team1_score[i+1], team2_score[i+1],team1_score[i], team2_score[i], i+1, rounds)
+        [winner, loser, color, msg] = message(team1, team2, team1_score[i+1], team2_score[i+1],team1_score[i], team2_score[i], i+1, rounds)
         if i+1 is not rounds:
             msg = get_state_message(winner, loser, lead, team1.name, team2.name, msg)
         lead.append(winner)
         
-        embed1=discord.Embed(color=0xba60eb)
+        embed1=discord.Embed(color=color)
         embed1.add_field(name="Match update", value=msg, inline=False)
         await channel.send(embed=embed1)
 
@@ -58,7 +58,7 @@ async def Event(team1, team2, channel, time_interval):
         }
         print(rates)
 
-        embed2=discord.Embed(color=0xfaf441)
+        embed2=discord.Embed(color=color)
         if team1_rates and team2_rates:
             embed2.add_field(name=f"{team1.name} rates:", value=team1_rates, inline=True)
             embed2.add_field(name=f"{team2.name} rates:", value=team2_rates, inline=True)
@@ -98,7 +98,7 @@ def message(team1, team2, t1, t2, previousT1, previousT2, n, max_round): # decid
         else:
             winner = team2
             loser = team1
-        return([winner.name, loser.name,
+        return([winner.name, loser.name, winner.color
             get_template(stage).format(
                 winning_team = "**" + winner.name + "**",
                 losing_team = "**" + loser.name + "**",
@@ -109,7 +109,7 @@ def message(team1, team2, t1, t2, previousT1, previousT2, n, max_round): # decid
     elif tie:
         teams = [team1, team2]
         random.shuffle(teams)
-        return(['tie', 'tie', 
+        return(['tie', 'tie', 0
             get_template(stage + '_tie').format(
                 teamone = "**" + teams[0].name + "**",
                 teamtwo = "**" + teams[1].name + "**",
