@@ -47,7 +47,7 @@ async def Event(team1, team2, channel, time_interval):
             msg = get_state_message(winner, loser, lead, team1.name, team2.name, msg)
         lead.append(winner)
         
-        embed1=discord.Embed(color=0xba60eb)
+        embed1=discord.Embed(color=color)
         embed1.add_field(name="Match update", value=msg, inline=False)
         await channel.send(embed=embed1)
 
@@ -58,7 +58,7 @@ async def Event(team1, team2, channel, time_interval):
         }
         print(rates)
 
-        embed2=discord.Embed(color=0xfaf441)
+        embed2=discord.Embed(color=color)
         if team1_rates and team2_rates:
             embed2.add_field(name=f"{team1.name} rates:", value=team1_rates, inline=True)
             embed2.add_field(name=f"{team2.name} rates:", value=team2_rates, inline=True)
