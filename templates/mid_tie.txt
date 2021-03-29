@@ -1,3 +1,6 @@
 {teamone} got a dragon but {teamtwo} responded with Rift Herald.
 {teamone} was trying to out-rotate {teamtwo}, but it didn't work due to poor pathing, come out even.
 {teamone} got a kill bot with a teleport play but {teamtwo} took top turret.
+Everyone went mid but they're too scared to go in.
+Game is a blood bath but no one is coming out on top.
+{teamone} is winning top but {teamtwo} is winning bot, will it be top or bot diff?

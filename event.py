@@ -8,7 +8,7 @@ import json
 
 global rates
 
-async def Event(team1, team2, channel):
+async def Event(team1, team2, channel, time_interval):
     global rates
     rates = {
         team1.name.lower(): 2,
@@ -20,7 +20,7 @@ async def Event(team1, team2, channel):
     team1_score = [0] # array of scores
     team2_score = [0]
     lead = [] # array of who was in the lead
-    time_interval = 0.1 # minutes
+    time_interval = float(time_interval) # minutes
     embed0 = discord.Embed(color=0x0394fc)
     embed0.add_field(name="Match starting!", value=f'Match between {team1.mention} and {team2.mention} is starting in **{time_interval}** minutes! Updates also every **{time_interval}** minutes.', inline=False)
     embed0.add_field(name=f"{team1.name}:", value= getMembers(team1), inline=True)

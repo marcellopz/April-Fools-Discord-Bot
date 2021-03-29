@@ -1,16 +1,18 @@
-{winning_user} landed a teamfight winning ultimate.
+{winning_user} landed a teamfight winning ultimate. {losing_team} has their mental shredded to pieces.
 {losing_user} misclicked. Baron stolen by {winning_user}.
 {losing_user} forgot that they had their summoners mixed up, fail-flashed into the enemy and died.
-{losing_team} BM’d in the enemy base and was aced by {winning_team}.
+{losing_team} BM'd in the enemy base and was aced by {winning_team}.
 {winning_user} splitpushed during a teamfight and took two towers and an inhibitor. 
 {losing_team} lost a teamfight because {losing_user} tried to splitpush. 
 {losing_team} was busy farming side lanes and {winning_team} took baron uncontested. 
 {losing_user} attempted to solo baron and was killed by {winning_user}. Some people have too big of an ego.
-{losing_team} didn’t notice the backdoor happening in their base and lost the game. Maybe scale up your minimap?
-{winning_user} placed a ward in the enemy base while {losing_team} wasn’t looking, allowing a teleport play. Sweepers save games.
+{winning_user} placed a ward in the enemy base while {losing_team} wasn't looking, allowing them to take 2 inhibitors for free.
 {winning_user} finished their third item and got a triple kill in the next teamfight.
 {losing_user} got cocky and tried to 1v5 the enemy team. It didn’t end well.
 {losing_team} got caught in {winning_team}’s combos and got wiped.
 {losing_user} is stuck in season 10 and went the wrong item build. Should have looked it up on mobafire.
 {winning_team} got a wombo combo after baiting baron. Where’re you at?
 {losing_team} forgot that they have worse scaling than {winning_team} and got slaughtered in the river.
+{losing_user} could not withstand getting that botlane wave. {winning_team} takes baron effortlessly in response!
+{losing_team} went for a risky baron play and managed to take it but gets aced in the fight afterwards. What a great Red Bull baron power play!
+{losing_user} falls for a bush trap in bot lane, leading to {winning_team} being able to take both Dragon and Baron. {losing_user} still has flash....
