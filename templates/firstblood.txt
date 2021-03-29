@@ -1,17 +1,23 @@
 {winning_team} invaded level one and killed {losing_user} for first blood.
-{losing_team} attempted a level one invade and failed horribly, giving first blood. 
-{losing_team} gave first blood from a level one invade. The salt can be felt through the screen. 
-{losing_user} was tabbed out during an invade and gave first blood. At least your music is on now.
-{winning_user} won a level 2 all-in against {losing_user} and took first blood.
-{losing_user} lost a level 2 all-in against {winning_user} and gave first blood. That’s embarrassing. 
-{winning_user} outplayed {losing_user} and got first blood. They’ll think twice next time lol. 
-{losing_user} miscalculated a play and gave first blood.
+{losing_team} attempted a level one invade and failed horribly, giving first blood. The salt levels are already on the rise.
+{losing_team} gave first blood from a level one invade. The salt can be felt through the screen.
+{losing_user} was tabbed out during an invade and gave first blood. At least their music is on now.
+{winning_user} won a level 2 all-in against {losing_user} and took first blood. Someone did not pay attention to the wave.
+{losing_user} lost a level 2 all-in against {winning_user} and gave first blood. That's embarrassing. 
+{winning_user} outplayed {losing_user} and got first blood. They'll think twice next time lol. 
+{losing_user} miscalculated a play and gave first blood. This is not a good time to first time your champion.
 {winning_user} got first blood on {losing_user} before minions even spawned!
-{losing_user} plays on his neighbour’s WIFI, lagged out and gave first blood!
+{losing_user} plays on their neighbour's WIFI, lagged out and gave first blood!
 {winning_user} cheesed {losing_user} and got first blood!
 {losing_user} was alt tabbed and {winning_user} did not forgive, first blood!
 {winning_team} cheesed in the botlane bush and got first blood!
 {losing_team} tried to invade but got outplayed, 3 members died.
 {winning_team} invaded and killed {losing_user} for first blood!
-{losing_user} plays with a new mouse and missclicked into the enemy tower. First blood!
-{winning_user} activated his scripts before the game. {losing_user} got demolished and gave first blood. Don’t worry they will get a ban sometime in the next years.
+{losing_user} is playing with a new mouse and missclicked into the enemy tower. First blood!
+{winning_user} activated their scripts before the game. {losing_user} got demolished and gave first blood. Don't worry they will get a ban sometime in the next years.
+{losing_user} thought they were the protagonist of this game and massively overestimated themselves. First blood for {winning_team}!
+{winning_user} put on their jam right before the game, which caused them to make a godlike outplay at level 3! First blood.
+{losing_user} got their buff stolen and chased {winning_user} into a trap, lost their buff and gave first blood, yikes.
+{losing_user} Had to catch a scam phone call and did not pay attention, first blood! But would you like to invest into some bitcoin at astonishing rates?
+{losing_user} alt-tabbed to answer a DM and forgot their champion was walking to lane, {winning_user} did not have mercy.
+

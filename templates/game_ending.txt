@@ -1,7 +1,7 @@
-{losing_team} tried a base race and lost!
+{losing_team} tried a base race and lost! They gambled on the wrong strategy!
 {losing_team} went to baron but {winning_user} backdoored and won!
 {winning_team} went all mid and won the fight without losing anyone and secured the victory.
-{winning_user} scaled too much and {losing_team} couldn’t drag out the game any longer, {winning_team} wiped them and won!
+{winning_user} scaled too much and {losing_team} couldn't drag out the game any longer, {winning_team} wiped them and won!
 {winning_user} backdoored the enemy nexus and won the game for {winning_team}. Very dirty but 20lp is 20lp.
 {losing_user} win traded with {winning_team} and threw on purpose in the game changing teamfight. Didn't know they were that cheap.
 {losing_team} won the teamfight at their nexus but was unable to stop the unending tide of creeps. The winnions ended the game for {winning_team}!
@@ -9,3 +9,4 @@
 {winning_team} outsmarted {losing_team} and caught them in the jungle with their pants down. The game ended off that.
 {winning_user} teleported to a ward in the enemy base and killed the enemy nexus.
 {winning_team} pushed through the enemy base with baron buff and won the game.
+{losing_team} didn't notice the backdoor happening in their base and lost the game. Maybe scale up your minimap?

@@ -22,11 +22,12 @@ client = commands.Bot(command_prefix = '.', intents = intents)
 
 mod_team = [173620782092517376, 164002296278024192, 243083529871818752, 322917297763123202, 239572326822182912]
 dev_chat = 766867758302101504
-match_channel = 727673871133835275 #824692473674727496
+match_channel = 824692473674727496
 command_channel = 824691712077201428
 botroom = 316142433828208643
 emoji_id = 824839887722643507
 event_role_id = 824698167874027520
+
 
 currently_playing = []
 bets = []
@@ -70,6 +71,8 @@ async def hi(ctx):
 
 @client.command()
 async def bet(ctx, *, args: str):
+    if ctx.channel.id not in allowed_channels:
+        return
     if not os.path.isfile('members/' + str(ctx.author.id) + '.json'):
         await ctx.send("You haven't joined the event yet")
     else:
@@ -138,6 +141,8 @@ async def bet(ctx, *, args: str):
 
 @client.command()
 async def mybets(ctx):
+    if ctx.channel.id not in allowed_channels:
+        return
     global bets
     if bets:
         answer = 'Your bet(s) are:\n'
@@ -150,6 +155,8 @@ async def mybets(ctx):
 
 @client.command()
 async def leaderboard(ctx):
+    if ctx.channel.id not in allowed_channels:
+        return
     member_list = []
     for filename in os.listdir('members/'):
         with open('members/' + filename, 'r') as read_file:
@@ -161,6 +168,22 @@ async def leaderboard(ctx):
         resp += "**{}**. {} - {}\n".format(member[0]+1, member[1]['name'], member[1]['coins'])
         if member[0] == 9:
             break
+    await ctx.send(resp)
+
+
+@client.command()
+async def bigleaderboard(ctx):
+    if ctx.author.id not in mod_team:
+        return
+    member_list = []
+    for filename in os.listdir('members/'):
+        with open('members/' + filename, 'r') as read_file:
+            member = json.load(read_file)
+        member_list.append(member)
+    sorted_list = sorted(member_list, key=itemgetter('coins'), reverse=True)
+    resp = "The Leaderboard is:\n\n"
+    for member in enumerate(sorted_list):
+        resp += "**{}**. {} - {}\n".format(member[0]+1, member[1]['name'], member[1]['coins'])
     await ctx.send(resp)
 
 
@@ -184,6 +207,8 @@ async def join(ctx):
 
 @client.command()
 async def balance(ctx):
+    if ctx.channel.id not in allowed_channels:
+        return
     if os.path.isfile('members/' + str(ctx.author.id) + '.json'):
         with open('members/' + str(ctx.author.id) + '.json', 'r') as read_file:
             member = json.load(read_file)
@@ -193,10 +218,10 @@ async def balance(ctx):
 
         
 @client.command()
-async def match(ctx, role1: discord.Role, role2: discord.Role):
-    channel = client.get_channel(match_channel)
+async def match(ctx, role1: discord.Role, role2: discord.Role, time_interval):
     if ctx.author.id not in mod_team:
         return
+    channel = client.get_channel(match_channel)
     global currently_playing
     global bets
     global aliases
@@ -207,7 +232,7 @@ async def match(ctx, role1: discord.Role, role2: discord.Role):
         role2.name.lower(): role2.name
     }
     aliases = dict(event.getAliases(role1.name.lower()), **event.getAliases(role2.name.lower()))
-    winner = await event.Event(role1, role2, channel)
+    winner = await event.Event(role1, role2, channel, time_interval)
     embed = discord.Embed(color=0x00fff7)
     embed.add_field(name=f"🎉🎉 **{winner.name}** wins! 🎉🎉", value=f'🏆🏆{winner.mention}🏆🏆')
     await channel.send(embed = embed)
