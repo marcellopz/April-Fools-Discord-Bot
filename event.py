@@ -34,7 +34,7 @@ async def Event(team1, team2, channel, time_interval):
     
     for i in range(rounds): # game
         await asyncio.sleep(60 * time_interval)
-        if (i>0.4*rounds and abs(team1_score[i]-team2_score[i])>1 and random.choice([True, False, False])) or abs(team1_score[i]-team2_score[i])>2:
+        if (i>0.4*rounds and abs(team1_score[i]-team2_score[i])>1 and random.choice([True, False,  False, False])) or abs(team1_score[i]-team2_score[i])>2:
             print('comeback mechanic')
             if team1_score[i]>team2_score[i]:
                 team2_score[i] += 1
@@ -98,7 +98,7 @@ def message(team1, team2, t1, t2, previousT1, previousT2, n, max_round): # decid
         else:
             winner = team2
             loser = team1
-        return([winner.name, loser.name, winner.color
+        return([winner.name, loser.name, winner.color,
             get_template(stage).format(
                 winning_team = "**" + winner.name + "**",
                 losing_team = "**" + loser.name + "**",
@@ -109,7 +109,7 @@ def message(team1, team2, t1, t2, previousT1, previousT2, n, max_round): # decid
     elif tie:
         teams = [team1, team2]
         random.shuffle(teams)
-        return(['tie', 'tie', 0
+        return(['tie', 'tie', 0,
             get_template(stage + '_tie').format(
                 teamone = "**" + teams[0].name + "**",
                 teamtwo = "**" + teams[1].name + "**",
@@ -141,7 +141,7 @@ def message(team1, team2, t1, t2, previousT1, previousT2, n, max_round): # decid
             winner = team2
             loser = team1
         #####################################################
-        return([winner.name, loser.name,
+        return([winner.name, loser.name, winner.color,
             get_template(stage).format(
                 winning_team = "**" + event_winner.name + "**",
                 losing_team = "**" + event_loser.name + "**",

@@ -1,9 +1,55 @@
-2021-03-26 02:06:44,347:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
-2021-03-26 02:06:44,349:INFO:discord.client: logging in using static token
-2021-03-26 02:06:44,986:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
-2021-03-26 02:06:45,169:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-m60v",{"micros":45722,"calls":["discord-sessions-prd-2-52",{"micros":42299,"calls":["start_session",{"micros":22918,"calls":["api-prd-main-zrrv",{"micros":20493,"calls":["get_user",{"micros":2099},"add_authorized_ip",{"micros":1160},"get_guilds",{"micros":4128},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":3,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: c40ab1a812e1da090599834ca0b31bbf).
-2021-03-26 02:13:51,514:INFO:discord.client: Received signal to terminate bot and event loop.
-2021-03-26 02:13:51,515:INFO:discord.client: Cleaning up tasks.
-2021-03-26 02:13:51,515:INFO:discord.client: Cleaning up after 1 tasks.
-2021-03-26 02:13:51,517:INFO:discord.client: All tasks finished cancelling.
-2021-03-26 02:13:51,517:INFO:discord.client: Closing the event loop.
+2021-04-01 17:30:31,312:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2021-04-01 17:30:31,314:INFO:discord.client: logging in using static token
+2021-04-01 17:30:31,612:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2021-04-01 17:30:31,744:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-9540",{"micros":84525,"calls":["discord-sessions-prd-2-61",{"micros":82890,"calls":["start_session",{"micros":45710,"calls":["api-prd-main-qxzd",{"micros":42950,"calls":["get_user",{"micros":18843},"add_authorized_ip",{"micros":1481},"get_guilds",{"micros":5349},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":6,"calls":[]},"presence_connect",{"micros":21121,"calls":[]}]}]}] (Session ID: 4a463d7e2aab0e6ea27d42ae06725392).
+2021-04-01 18:07:39,226:INFO:discord.gateway: Websocket closed with 1001, attempting a reconnect.
+2021-04-01 18:07:39,226:INFO:discord.client: Got a request to RESUME the websocket.
+2021-04-01 18:07:39,364:INFO:discord.gateway: Shard ID None has sent the RESUME payload.
+2021-04-01 18:07:39,407:INFO:discord.gateway: Shard ID None has successfully RESUMED session 4a463d7e2aab0e6ea27d42ae06725392 under trace ["gateway-prd-main-pcnz",{"micros":1599,"calls":["discord-sessions-prd-2-61",{"micros":24}]}].
+2021-04-01 21:33:54,411:INFO:discord.client: Got a request to RESUME the websocket.
+2021-04-01 21:33:54,582:INFO:discord.gateway: Shard ID None has sent the RESUME payload.
+2021-04-01 21:33:54,631:INFO:discord.gateway: Shard ID None has successfully RESUMED session 4a463d7e2aab0e6ea27d42ae06725392 under trace ["gateway-prd-main-vmwd",{"micros":2744,"calls":["discord-sessions-prd-2-61",{"micros":16}]}].
+2021-04-01 23:32:53,858:INFO:discord.gateway: Websocket closed with 1006, attempting a reconnect.
+2021-04-01 23:32:53,859:INFO:discord.client: Got a request to RESUME the websocket.
+2021-04-01 23:32:54,035:INFO:discord.gateway: Shard ID None has sent the RESUME payload.
+2021-04-01 23:32:54,077:INFO:discord.gateway: Shard ID None has successfully RESUMED session 4a463d7e2aab0e6ea27d42ae06725392 under trace ["gateway-prd-main-lgfq",{"micros":661,"calls":["discord-sessions-prd-2-61",{"micros":19}]}].
+2021-04-02 02:23:48,721:INFO:discord.client: Got a request to RESUME the websocket.
+2021-04-02 02:23:48,881:INFO:discord.gateway: Shard ID None has sent the RESUME payload.
+2021-04-02 02:23:48,925:INFO:discord.gateway: Shard ID None has successfully RESUMED session 4a463d7e2aab0e6ea27d42ae06725392 under trace ["gateway-prd-main-p9r5",{"micros":1031,"calls":["discord-sessions-prd-2-61",{"micros":15}]}].
+2021-04-02 04:00:56,997:INFO:discord.client: Got a request to RESUME the websocket.
+2021-04-02 04:00:57,165:INFO:discord.gateway: Shard ID None has sent the RESUME payload.
+2021-04-02 04:00:57,228:INFO:discord.gateway: Shard ID None has successfully RESUMED session 4a463d7e2aab0e6ea27d42ae06725392 under trace ["gateway-prd-main-k885",{"micros":1375,"calls":["discord-sessions-prd-2-61",{"micros":12}]}].
+2021-04-02 07:30:57,227:INFO:discord.client: Got a request to RESUME the websocket.
+2021-04-02 07:30:57,441:INFO:discord.gateway: Shard ID None has sent the RESUME payload.
+2021-04-02 07:30:57,489:INFO:discord.gateway: Shard ID None has successfully RESUMED session 4a463d7e2aab0e6ea27d42ae06725392 under trace ["gateway-prd-main-pt2c",{"micros":6659,"calls":["discord-sessions-prd-2-61",{"micros":14}]}].
+2021-04-02 09:41:36,996:INFO:discord.client: Got a request to RESUME the websocket.
+2021-04-02 09:41:37,160:INFO:discord.gateway: Shard ID None has sent the RESUME payload.
+2021-04-02 09:41:37,204:INFO:discord.gateway: Shard ID None has successfully RESUMED session 4a463d7e2aab0e6ea27d42ae06725392 under trace ["gateway-prd-main-m60v",{"micros":476,"calls":["discord-sessions-prd-2-61",{"micros":15}]}].
+2021-04-02 11:53:57,883:INFO:discord.client: Got a request to RESUME the websocket.
+2021-04-02 11:53:58,042:INFO:discord.gateway: Shard ID None has sent the RESUME payload.
+2021-04-02 11:53:58,089:INFO:discord.gateway: Shard ID None has successfully RESUMED session 4a463d7e2aab0e6ea27d42ae06725392 under trace ["gateway-prd-main-nxhw",{"micros":1354,"calls":["discord-sessions-prd-2-61",{"micros":15}]}].
+2021-04-02 12:09:28,928:INFO:discord.client: Got a request to RESUME the websocket.
+2021-04-02 12:09:29,102:INFO:discord.gateway: Shard ID None has sent the RESUME payload.
+2021-04-02 12:09:29,149:INFO:discord.gateway: Shard ID None has successfully RESUMED session 4a463d7e2aab0e6ea27d42ae06725392 under trace ["gateway-prd-main-c00x",{"micros":4257,"calls":["discord-sessions-prd-2-61",{"micros":14}]}].
+2021-04-02 14:23:52,092:INFO:discord.client: Got a request to RESUME the websocket.
+2021-04-02 14:23:52,261:INFO:discord.gateway: Shard ID None has sent the RESUME payload.
+2021-04-02 14:23:52,309:INFO:discord.gateway: Shard ID None has successfully RESUMED session 4a463d7e2aab0e6ea27d42ae06725392 under trace ["gateway-prd-main-gv9q",{"micros":4821,"calls":["discord-sessions-prd-2-61",{"micros":18}]}].
+2021-04-02 16:51:22,703:INFO:discord.client: Got a request to RESUME the websocket.
+2021-04-02 16:51:22,878:INFO:discord.gateway: Shard ID None has sent the RESUME payload.
+2021-04-02 16:51:22,924:INFO:discord.gateway: Shard ID None has successfully RESUMED session 4a463d7e2aab0e6ea27d42ae06725392 under trace ["gateway-prd-main-tq77",{"micros":781,"calls":["discord-sessions-prd-2-61",{"micros":17}]}].
+2021-04-02 18:29:24,723:INFO:discord.client: Got a request to RESUME the websocket.
+2021-04-02 18:29:24,913:INFO:discord.gateway: Shard ID None has sent the RESUME payload.
+2021-04-02 18:29:24,959:INFO:discord.gateway: Shard ID None has successfully RESUMED session 4a463d7e2aab0e6ea27d42ae06725392 under trace ["gateway-prd-main-9pdw",{"micros":1589,"calls":["discord-sessions-prd-2-61",{"micros":77}]}].
+2021-04-02 19:22:01,025:INFO:discord.client: Got a request to RESUME the websocket.
+2021-04-02 19:22:01,230:INFO:discord.gateway: Shard ID None has sent the RESUME payload.
+2021-04-02 19:22:01,277:INFO:discord.gateway: Shard ID None has successfully RESUMED session 4a463d7e2aab0e6ea27d42ae06725392 under trace ["gateway-prd-main-tmbj",{"micros":1238,"calls":["discord-sessions-prd-2-61",{"micros":15}]}].
+2021-04-02 21:02:15,178:INFO:discord.client: Got a request to RESUME the websocket.
+2021-04-02 21:02:15,352:INFO:discord.gateway: Shard ID None has sent the RESUME payload.
+2021-04-02 21:02:15,399:INFO:discord.gateway: Shard ID None has successfully RESUMED session 4a463d7e2aab0e6ea27d42ae06725392 under trace ["gateway-prd-main-9pdw",{"micros":2850,"calls":["discord-sessions-prd-2-61",{"micros":20}]}].
+2021-04-02 22:33:29,457:INFO:discord.client: Got a request to RESUME the websocket.
+2021-04-02 22:33:29,642:INFO:discord.gateway: Shard ID None has sent the RESUME payload.
+2021-04-02 22:33:29,688:INFO:discord.gateway: Shard ID None has successfully RESUMED session 4a463d7e2aab0e6ea27d42ae06725392 under trace ["gateway-prd-main-sln0",{"micros":502,"calls":["discord-sessions-prd-2-61",{"micros":18}]}].
+2021-04-02 23:21:24,660:INFO:discord.client: Cleaning up tasks.
+2021-04-02 23:21:24,661:INFO:discord.client: Cleaning up after 1 tasks.
+2021-04-02 23:21:24,682:INFO:discord.client: All tasks finished cancelling.
+2021-04-02 23:21:24,682:INFO:discord.client: Closing the event loop.
